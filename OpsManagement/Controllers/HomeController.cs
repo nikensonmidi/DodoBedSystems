@@ -22,7 +22,7 @@ namespace OpsManagement.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Soon to be removed.";
 
             return View();
         }
