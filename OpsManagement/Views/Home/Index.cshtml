@@ -1,0 +1,24 @@
+﻿@model  OpsManagement.Models.User
+@{
+    ViewBag.Title = "Login";
+}
+
+<div class="jumbotron">
+    <div class="row">
+        <h2> DodoBed Operation Management System</h2>
+    </div>
+    @if (!Model.IsAuthenticated)
+    {
+        @Html.Partial("_LoginForm", Model)
+    }
+    else
+    {
+        @Html.Partial("_Menu")
+
+    }
+
+
+
+
+</div>
+
